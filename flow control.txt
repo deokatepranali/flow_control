@@ -1,0 +1,281 @@
+
+                     #conditional stmt(if,if-else,elif)
+
+                  #1] if :
+'''
+x,y=10,20
+if  x>y:
+    print('true')
+'''
+                #2] if-else
+'''
+#1] normal
+x,y=20,30
+if x<y :
+    print('hello')
+else:
+    print('hi')
+
+#2]In python 0=false 1=true
+if 1:
+    print('False')
+else:
+    print('true')
+
+#3]single line of if-else.
+# here taking one-line print
+(print('hi')if 10<20 else print('hello'))
+'''
+'''
+                                                      #Assignments by ratan sir
+       #1. Take the year from end-user check leap year or not.
+
+x=int(input('enter year'))
+if  x%4:
+    print('leap')
+else:
+    print('not leap')
+'''
+'''
+     #2]2. Take the two numbers from end user print the bigger number
+y= int(input('enter the numbers 1 :'))
+z=int(input('enter the number 2 :'))
+if  y > z :
+    print('bigger num')
+else:
+    print('small num')
+
+'''
+'''
+#3. Take the number from end user print that is even or odd.
+q=int(input('enter the num'))
+if q%2==0 :
+    print('even')
+else:
+    print('odd')
+'''
+'''
+#44. Take the number from end user check it is positive or negative.
+#if it is positive : print it is even or odd
+#if it is negative: print it is even or odd
+
+num = int(input("enter a number:"))
+if num>0:
+ if num%2==0:
+     print("number is positive & even")
+ else:
+  print("number is positive & odd")
+else:
+  if num%2==0:
+    print("number is negative & even")
+  else:
+    print("number is neagative & odd")
+'''
+
+
+                                           #3]elif
+'''
+a=200
+if a==10:
+    print('hello')
+elif a==20:
+    print('hi')
+elif a==200:
+    print('pranali')
+else:
+    print('deokate')
+
+    #: Take number from end -user check it is positive or negative or zero
+r=int(input('enter the num'))
+if r==0:
+    print('zero')
+elif r>0:
+    print('positive')
+elif r<0:
+    print('negative')
+'''
+'''
+#: printing Discount mon,tue = 2% wed,thr,fri = 3% sat,sun = 5%
+
+q=input('enter the day ')
+if q=='mon' and q=='tue':
+    print('discount =2%')
+elif q=='wed' and q=='thr' and q=='fri':
+    print('discount 3%')
+else:
+    print('discount 5%')
+    
+    
+'''
+                                      #assignment1 by kirshna sir
+'''
+#WAP to find biggest of given 2 number?
+x=int(input('enter the 1 number'))
+y= int(input('enter the 2 number'))
+if x>y :
+    print('big num')
+
+else:
+    print('small num')
+'''
+
+'''
+#WAP to find biggest of given 3 number?
+a=int(input('enetr 1 number'))
+b=int(input('enter 2 number'))
+c=int(input('enter 3 number'))
+if a>b and a>c:
+    print('biggest number')
+elif b>c:
+    print('next biggest number')
+else:
+    print('no any biggest number')
+'''
+'''
+#.WAP even or odd?
+d= int (input('enter the number'))
+if d%2==0:
+    print('even number')
+else:
+    print('odd number')
+'''
+                                        # for loop
+'''
+for x in range(10):
+    print(x)
+ '''
+'''
+for x in range(2,5):
+    print(x)
+ '''
+'''
+for x in range(10,20,2):
+    print(x)
+  '''
+'''
+for x in range(20,10,-1):
+    print(x)
+    
+    '''
+'''
+for x in 'pranali':
+    print(x)
+
+'''
+
+              #Break
+'''
+for x in range(1,10):
+      if x==4:
+        break
+      print('hi',x)
+      
+      
+num=int(input('enter the num'))
+for x in range(1,10):
+    if x==num:
+        break
+    print(x)
+    '''
+       #continue
+'''
+for x in range(1,10):
+    if x==4:
+        continue
+    print(x)
+
+
+num=int(input('enter the num'))
+for x in range(1,10):
+    if x==num:
+        continue
+    print(x)
+'''
+'''
+#single line
+for x in range(1,10):
+    print(x,end=" ")
+
+# sum function
+print(sum(range(1,10)))
+'''
+
+             #Assignment by ratan sir
+'''
+#question in notebook   ---2
+n=int(input('enter the num'))
+
+for n in range(10):
+ if n%2==0:
+  print(sum())
+  
+'''
+
+#Que :in notebook ---4
+'''
+pincode = 1234
+for x in range(1,5):
+    n = int(input(f"enter pin code attempt {x} :"))
+    if n==pincode:
+       print("pin code is valid...congratuations...")
+       break
+if(x==4):
+ print("Bye bye your attempts are completed.....")
+'''
+
+                                                         #Assignment by krishna sir
+'''
+ # 1]Print all elements of list using for loop
+aa=[1,2,3,4,5,6,7,8,8,9]
+for i in aa:
+    b=[]
+    b.append(i)
+    print(b)
+'''
+'''
+#2]using range(1,101)make two list ,one containing all even number and another contains all odd number
+a=[]
+b=[]
+for i in range(1,101):
+    if i%2==0:
+        a.append(i)
+
+    else:
+        b.append(i)
+print('even:', a)
+print('odd:',b)
+
+'''
+#3] from a list containing int,string,and float  ,makes three  list to store them separatly?
+li=[12,56,78,'pranali','prashant',56.89,65.90]
+a=[]
+b=[]
+c=[]
+for i in li:
+    if type(i)==int:
+        a.append(i)
+    elif type(i)==float:
+        b.append(i)
+    elif type(i)==str:
+        c.append(i)
+print(a)
+print(b)
+print(c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
